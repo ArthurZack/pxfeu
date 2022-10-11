@@ -1,8 +1,12 @@
 {
     "name": "pxfeu",
-    "description": "",
+    "description": "pxfeu",
     "keywords": ["vmess vless trojan shadowsocks socks"],
     "env": {
+        "AA": {
+            "description": "初阶用户只需修改以下AUUID点击页面最后的Deploy app按钮即可开始部署",
+            "value": "如出现错误，请检查参数格式或多尝试几次。使用自定义参数请务必先充分理解其含义"
+        },
         "AUUID": {
             "description": "UUID充当各个配置的路径和账号密码，建议修改和妥善保存,可生成UUID的网站: https://www.uuidgenerator.net",
             "value": "1b21b8b7-6259-48bb-9812-22b63140e199"
@@ -13,7 +17,7 @@
         },
         "ParameterSSENCYPT": {
             "description": "SS加密方式，查看支持协议: https://www.v2fly.org/config/protocols/shadowsocks.html",
-            "value": "chacha20-ietf-poly1305"
+            "value": "none"
         }
     },
     "repository": "",
